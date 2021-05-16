@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: guestbook-ingress-preview
+  namespace: guestbook
+  annotations:
+        
+spec:
+  rules:
+  - host: preview.myapp.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: guestbook-ui-preview
+          servicePort: http
