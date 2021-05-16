@@ -14,11 +14,3 @@ spec:
         backend:
           serviceName: guestbook-ui
           servicePort: http
-      
- -  host: preview.myapp.com
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: guestbook-ui-preview
-          servicePort: http
