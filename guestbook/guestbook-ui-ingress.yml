@@ -14,6 +14,7 @@ spec:
         backend:
           serviceName: guestbook-ui
           servicePort: http
+      
  -  host: preview.myapp.com
     http:
       paths:
