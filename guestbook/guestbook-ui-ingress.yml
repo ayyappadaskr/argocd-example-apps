@@ -12,6 +12,7 @@ spec:
     http:
       paths:
       - path: /guestbook(/|$)(.*)
+        pathType : prefix
         backend:
           serviceName: guestbook-ui
           servicePort: http
