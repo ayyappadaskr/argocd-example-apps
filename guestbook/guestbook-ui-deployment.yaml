@@ -18,3 +18,11 @@ spec:
         name: guestbook-ui
         ports:
         - containerPort: 80
+  strategy:
+  #     blueGreen:
+  #       activeService: rollouts-demo
+  #       previewService: rollouts-demo-preview
+       canary: 
+         steps:
+         - setWeight: 20
+         - pause: {}
