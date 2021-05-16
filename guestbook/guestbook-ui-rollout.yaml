@@ -22,6 +22,7 @@ spec:
        blueGreen:
          activeService: guestbook-ui
          previewService: guestbook-ui-preview
+         autoPromotionEnabled: false
   #     canary: 
   #       steps:
   #       - setWeight: 20
