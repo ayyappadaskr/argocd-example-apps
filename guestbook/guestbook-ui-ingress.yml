@@ -9,7 +9,7 @@ spec:
   - host: 
     http:
       paths:
-      - path: /guestbook-ui(/|$)(.*)
+      - path: /guestbook(/|$)(.*)
         backend:
           serviceName: guestbook-ui
           servicePort: http
