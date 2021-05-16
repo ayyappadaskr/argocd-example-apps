@@ -4,15 +4,13 @@ metadata:
   name: guestbook-ui
   namespace: guestbook
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /$2
-    
+        
 spec:
   rules:
-  - host: 
+  - host: guestapp.myapp.com
     http:
       paths:
-      - path: /guestbook(/|$)(.*)
-        pathType : Prefix
+      - path: /
         backend:
           serviceName: guestbook-ui
           servicePort: http
