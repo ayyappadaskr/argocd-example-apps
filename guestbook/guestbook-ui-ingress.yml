@@ -12,5 +12,5 @@ spec:
       paths:
       - path: /guestbook(/|$)(.*)
         backend:
-          serviceName: guestbook-ui2
+          serviceName: guestbook-ui
           servicePort: http
