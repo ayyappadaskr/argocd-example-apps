@@ -14,7 +14,7 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-      - image: localhost:5000/demo:v1
+      - image: localhost:32000/demo:v1
         name: guestbook-ui
         ports:
         - containerPort: 80
