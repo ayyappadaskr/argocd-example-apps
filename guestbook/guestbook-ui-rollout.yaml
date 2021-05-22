@@ -17,7 +17,7 @@ spec:
       - image: localhost:32000/demo:v1
         name: guestbook-ui
         ports:
-        - containerPort: 80
+        - containerPort: 8090
   strategy:
        blueGreen:
          activeService: guestbook-ui
